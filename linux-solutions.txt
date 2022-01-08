@@ -1,0 +1,32 @@
+XORG: (xwallpaper) (xscreensaver) (xclip) (xkill) (unclutter)
+WINDOW MANAGER: (awesome) (dwm)
+TERMINAL: (st)
+TEXT EDITOR: (vim) (VScodium)
+PDF VIEWER: (evince)
+IMAGE VIEWER: (feh)
+FONTS: (Fontawesome)
+VIDEO PLAYER: (mpv)
+POWER SOLUTION: (ACPI)
+INTERNET BROWSER: (Firefox)
+SCREENSHOTS: (scrot)
+
+FILE MANAGER: (pcmanfm) (ranger)
++ file system support for usb
+    +exfat-utils
+    +fuse-exfat
+
+SHELL:
+- zshell
+    +zsh-syntax-highlighting
+    +zsh-completions
+    +gentoo-zsh-completions
+
+
+NETWORK SOLUTION:
+- Network manager
+    +wificon dmenu scripts
+    (+wpa_supplicant for wifi)?
+
+AUDIO SOLUTION: (WIP) - ALSA
+
+~Lucas
