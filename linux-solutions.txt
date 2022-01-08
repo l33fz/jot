@@ -26,7 +26,8 @@ NETWORK SOLUTION:
 - Network manager
     +wificon dmenu scripts
     (+wpa_supplicant for wifi)?
+    // nm-applet would be easier...
 
-AUDIO SOLUTION: (WIP) - ALSA
+AUDIO SOLUTION: (WIP) [ALSA base] -
 
 ~Lucas
