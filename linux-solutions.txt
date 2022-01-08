@@ -1,14 +1,15 @@
 XORG: (xwallpaper) (xscreensaver) (xclip) (xkill) (unclutter)
 WINDOW MANAGER: (awesome) (dwm)
-TERMINAL: (st)
+STATUS BAR: (wibar? -awesome default) (slstatus)
+TERMINAL: (st) (kitty)
 TEXT EDITOR: (vim) (VScodium)
 PDF VIEWER: (evince)
 IMAGE VIEWER: (feh)
 FONTS: (Fontawesome)
-VIDEO PLAYER: (mpv)
+VIDEO PLAYER: (mpv) (VLC)
 POWER SOLUTION: (ACPI)
 INTERNET BROWSER: (Firefox)
-SCREENSHOTS: (scrot)
+SCREENSHOTS: `(scrot)
 
 FILE MANAGER: (pcmanfm) (ranger)
 + file system support for usb
