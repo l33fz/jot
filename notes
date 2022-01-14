@@ -111,3 +111,6 @@ make && make modules_install
 make install
 *(grub-mkconfig -o /boot/grub/grub.cfg)
 reboot
+
+CREATING BOOTABLE USB WITH ISO:
+sudo dd if=~/Downloads/linux-iso-file.iso of=/dev/sdX status=progress
