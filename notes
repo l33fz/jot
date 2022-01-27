@@ -1,51 +1,13 @@
 Brightness:
-set with 'xbacklight -set #'
-permission addition in /etc/udev/rules
-
-`
-git help tutorial
-check /etc/hosts
-doas emerge app-text/texlive
-
-* Messages for package media-gfx/imagemagick-7.1.0.5:
-
-  * For security reasons, a policy.xml file was installed in /etc/ImageMagick-7
-   * which will prevent the usage of the following coders by default:
-    *
-     *   - PS
-      *   - PS2
-       *   - PS3
-        *   - EPS
-         *   - PDF
-          *   - XPS
-
-           * Messages for package x11-wm/awesome-4.3-r101:
-
-            * If you are having issues with Java application windows being
-             * completely blank, try installing
-              *   x11-misc/wmname
-               * and setting the WM name to LG3D.
-                * For more info visit
-                 *   https://bugs.gentoo.org/show_bug.cgi?id=440724
-                 >>> Auto-cleaning packages...
-
-                 >>> No outdated packages were found on your system.
-
-                  * GNU info directory index is up-to-date.
-
-                   * IMPORTANT: 23 news items need reading for repository 'gentoo'.
-                    * Use eselect news read to view new items.
 
 LOADING KERNEL MODULES: vim /etc/modules-load.d/network.conf
 
 ADDING SCRIPTS/COMMAND:
 1. chmod 755 filenamenoextension
-2. add file to /usr/share/bin or any other pre-existing $PATH
-
+2. add file to /usr/share/bin or any other pre-existing $PATH location
 
 No rule to make target '/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include/stddef.h'
 Default Keyring:unknown
-
 
 USB STICK:
 # fdisk -l
@@ -53,13 +15,19 @@ USB STICK:
 
 ENABLE CHINESE FONTS:
 emerge media-fonts/arphicfonts media-fonts/font-isas-misc  media-fonts/wqy-bitmapfont media-fonts/intlfonts
-
 Use `eselect fontconfig` to enable/disable them.
-
 eselect fontconfig enable 85-wqy-bitmapsong.conf
 
+BRIGHTNESS AND VOLUME:
+set with 'xbacklight -set (percent)'
+permission addition in /etc/udev/rules
 On a laptop you can use `XF86MonBrightnessUp` and `XF86MonBrightnessDown` keys.
-
+DWM BUTTON DEFINITIONS:
+XF86XK_AudioRaiseVolume
+XF86XK_AudioLowerVolume
+XF86XK_AudioMute 
+XF86XK_MonBrightnessUp 
+XF86XK_MonBrightnessDown 
 
 FONT UPDATE (/usr/share/fonts):
 fc-cache -f -v
@@ -74,39 +42,14 @@ COOL CHARACTERS:
 ʃ
 Ώ
 
-PULSE AUDIO MSGS:
- * Messages for package media-sound/pulseaudio-15.0-r1:
-
-  * PulseAudio can be enhanced by installing the following:
-   *   sys-auth/rtkit for restricted realtime capabilities via D-Bus
-
-    * Messages for package dev-libs/boost-1.77.0-r4:
-
-     * Boost.Regex is *extremely* ABI sensitive. If you get errors such as
-      *
-       *   undefined reference to `boost::re_detail_107700::cpp_regex_traits_implementation
-        *     <char>::transform_primary[abi:cxx11](char const*, char const*) const'
-         *
-          * Then you need to recompile Boost and all its reverse dependencies
-           * using the same toolchain. In general, *every* change of the C++ toolchain
-            * requires a complete rebuild of the Boost-dependent ecosystem.
-             *
-              * See for instance https://bugs.gentoo.org/638138
-
-* Messages for package sys-fs/cryptsetup-2.3.6-r2:
-
- *   CONFIG_DM_CRYPT:   is not set (required for cryptsetup)
-  *
-   * Please check to make sure these options are set correctly.
-    * Failure to do so may cause unexpected problems.
-
+CORSAIR MOUSE:
 * The ckb daemon will have to be started before use:
  *
   * # rc-service ckb start
   `
 
 KERNEL REBUILD:*(if major upgrade)
-make && make modules_install
+make -j(#) && make modules_install
 *(mount /boot)
 make install
 *(grub-mkconfig -o /boot/grub/grub.cfg)

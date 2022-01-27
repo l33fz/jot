@@ -1,13 +1,16 @@
-#tep 1: Emerging the new kernel sources.
-#tep 2: Setting the right symlink to the new kernel.
-#tep 3: Moving to the new kernel's folder.
-#tep 4: Adjusting the .config file for the options introduced to, or removed from the new kernel's configuration.
+Step 1: Emerging the new kernel sources.
+Step 2: Setting the right symlink to the new kernel.
+Step 3: Moving to the new kernel's folder.
+Step 4: Adjusting the .config file for the options introduced to, or removed from the new kernel's configuration.
 Step 5: Building the kernel and the initramfs.
 Step 6: Updating the bootloader.
 Step 7: Removing or keeping the old kernel.
 
+-> in /usr/src/linux
 make -j6
 make modules_install
-mount /boot
+*mount /boot
 make install
-grub-mkconfig -o /boot/grub/grub.cfg
+*grub-mkconfig -o /boot/grub/grub.cfg
+
+*if necessary
