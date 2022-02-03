@@ -1,17 +1,17 @@
-XORG: (xwallpaper) (xscreensaver) (xclip) (xkill) (unclutter)
+XORG: (xwallpaper) (xscreensaver) (xclip) (xkill) (unclutter) (xbacklight)
 WINDOW MANAGER: (awesome) (dwm)
-STATUS BAR: (wibar? -awesome default) (slstatus)
+STATUS BAR: (slstatus)
 TERMINAL: (st) (kitty)
-TEXT EDITOR: (vim) (VScodium)
-PDF VIEWER: (evince)
+TEXT EDITOR: (vim / nvim) (VScodium)
+PDF VIEWER: (evince) (Zathura)
 IMAGE VIEWER: (feh)
-FONTS: (Fontawesome)
+FONTS: (Fontawesome) (VictorMono Nerd Font) (Ubuntu Mono)
 VIDEO PLAYER: (mpv) (VLC)
-POWER SOLUTION: (ACPI)
-INTERNET BROWSER: (Firefox)
-SCREENSHOTS: `(scrot)
+POWER SOLUTION: (ACPI) (laptop-mode-tools)
+INTERNET BROWSER: (Firefox) (Midori) (Surf)
+SCREENSHOTS: `(scrot) (flameshot)
 
-FILE MANAGER: (pcmanfm) (ranger)
+FILE MANAGER: (pcmanfm) (ranger) (dolphin for KDE)
 + file system support for usb
     +exfat-utils
     +fuse-exfat
@@ -21,6 +21,7 @@ SHELL:
     +zsh-syntax-highlighting
     +zsh-completions
     +gentoo-zsh-completions
+    +starship prompt
 
 
 NETWORK SOLUTION:
@@ -29,6 +30,6 @@ NETWORK SOLUTION:
     (+wpa_supplicant for wifi)?
     // nm-applet would be easier...
 
-AUDIO SOLUTION: (WIP) [ALSA base] -
+AUDIO SOLUTION: (WIP) [ALSA base] - (PulseAudio is (almost) essential)
 
 ~Lucas
