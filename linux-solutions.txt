@@ -5,19 +5,18 @@ TERMINAL: (st) (kitty)
 TEXT EDITOR: (vim / nvim) (VScodium)
 PDF VIEWER: (evince) (Zathura)
 IMAGE VIEWER: (feh)
-FONTS: (Fontawesome) (VictorMono Nerd Font) (Ubuntu Mono)
+FONTS: (Fontawesome) (VictorMono Nerd Font) (Ubuntu Mono) (NimbusMono)
 VIDEO PLAYER: (mpv) (VLC)
 POWER SOLUTION: (ACPI) (laptop-mode-tools)
-INTERNET BROWSER: (Firefox) (Midori) (Surf)
-SCREENSHOTS: `(scrot) (flameshot)
+INTERNET BROWSER: (Firefox) (Midori) (Surf) (Librewolf)
+SCREENSHOTS: (flameshot)
 
 FILE MANAGER: (pcmanfm) (ranger) (dolphin for KDE)
 + file system support for usb
     +exfat-utils
     +fuse-exfat
 
-SHELL:
-- zshell
+SHELL: (zshell)
     +zsh-syntax-highlighting
     +zsh-completions
     +gentoo-zsh-completions
