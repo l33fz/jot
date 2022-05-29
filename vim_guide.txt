@@ -1,5 +1,6 @@
 VIM GUIDE IN VIM
 config under ~/.vimrc
+example .vimrc in l33fz/.files repository contains additional comments
 //////////////////////
 Vim Modes: Normal, Insert, Visual, Command
 
@@ -8,6 +9,11 @@ Insert (I)
 Visual (V)
 Command (:)
 
+ESSENTIAL COMMANDS
+:w (write)
+:q (quit)
+:wq (write and quit)
+
 NUMBERING
 :set number (displays line numbers)
 :set nonumber (not show line numbers)
@@ -15,7 +21,7 @@ NUMBERING
 :set norelativenumber (reset to absolute numbering)
 
 NAVIGATION
-'#' number of spaces
+'#' manually input number
 #h (right)
 #l (left)
 
@@ -36,7 +42,7 @@ A (end of line)
 o (new line on bottom)
 O (new line on top)
 
---Cut,Copy,Paste
+--Cut,Copy,Paste [does not use system clipboard!!!]
 v (selecting) => x (delete selection)
 y (copying)
 d (cut)
