@@ -7,7 +7,7 @@ Step 6: Updating the bootloader.
 Step 7: Removing or keeping the old kernel.
 
 -> in /usr/src/linux
-make -j6
+make -j(number of threads)
 make modules_install
 *mount /boot
 make install
