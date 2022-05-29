@@ -1,0 +1,14 @@
+Formula-
+The package definition
+
+Keg-
+The installation prefix of a Formula
+
+Cellar-
+All Kegs are installed here
+
+Tap
+A Git repository of Formulae and/or commands
+
+Cask
+An extension of Homebrew to install macOS native apps

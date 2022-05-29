@@ -1,0 +1,7 @@
+Macos commands
+
+Move
+$ mv [old filepath] [new filepath]
+
+Copy
+$ cp -R [old filepath] [new filepath]
