@@ -1,17 +1,15 @@
-Brightness:
-
-LOADING KERNEL MODULES: vim /etc/modules-load.d/network.conf
+LOADING KERNEL MODULES: /etc/modules-load.d/(-----).conf
 
 ADDING SCRIPTS/COMMAND:
 1. chmod 755 filenamenoextension
-2. add file to /usr/share/bin or any other pre-existing $PATH location
+2. add file to /usr/share/bin or any other $PATH location
 
 No rule to make target '/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include/stddef.h'
 Default Keyring:unknown
 
 USB STICK:
 # fdisk -l
-# mount /dev/sd(letter)1 /mount_point_1
+# mount /dev/sd(letter)1 /mount_point
 
 ENABLE CHINESE FONTS:
 emerge media-fonts/arphicfonts media-fonts/font-isas-misc  media-fonts/wqy-bitmapfont media-fonts/intlfonts
@@ -41,12 +39,6 @@ COOL CHARACTERS:
 Ǆ
 ʃ
 Ώ
-
-CORSAIR MOUSE:
-* The ckb daemon will have to be started before use:
- *
-  * # rc-service ckb start
-  `
 
 KERNEL REBUILD:*(if major upgrade)
 make -j(#) && make modules_install
